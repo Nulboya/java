@@ -1,0 +1,35 @@
+spring:
+    mvc:
+        view:
+            prefix: /WEB-INF/jsp/
+            suffix: .jsp
+    social:
+        facebook:
+            appId: 431787150498214
+            appSecret: f0d4e5a3ceecb08cb81d1f52d8432cc0
+    jpa:
+        generate-ddl: true
+        show-sql: true
+        hibernate:
+            ddl-auto: update
+    h2:
+        console:
+            enabled: true
+    datasource:
+        url: jdbc:h2:file:./spring-blog
+    jackson:
+        date-format: yyyy-MM-dd'T'HH:mm:ss.SSSXXX
+        time-zone : Asia/Seoul
+#        deserialization:
+#            unwrap-root-value: true
+#        serialization:
+#            wrap-root-value: true
+
+logging:
+    level:
+        blog: DEBUG
+
+server:
+    error:
+        whitelabel:
+            enabled: false
